@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "thm-addon",
+  "version": "${version}",
+  "name": "THM Addon",
+  "description": "THM Addon for Meteor Client",
+  "authors": [
+    "Leonn170709"
+  ],
+  "contact": {
+    "repo": "https://github.com/Leonn170709/THM-Addons"
+  },
+  "icon": "assets/icon/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "meteor": [
+      "xyz.thm.addon.THMAddon"
+    ]
+  },
+  "mixins": [
+    "thm-addon.mixins.json"
+  ],
+  "custom": {
+    "meteor-client:color": "0,255,255",
+    "modmenu": {
+      "parent": {
+        "id": "meteor-client"
+      }
+    }
+  },
+  "depends": {
+    "java": ">=21",
+    "minecraft": ">=1.21.10 <=1.21.11",
+    "meteor-client": "*"
+  }
+}
