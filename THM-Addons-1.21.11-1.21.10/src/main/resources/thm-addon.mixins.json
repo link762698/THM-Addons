@@ -1,0 +1,22 @@
+{
+  "required": true,
+  "package": "xyz.thm.addon.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "mixins": [
+    "HighwayBuilderCameraMixin",
+    "HighwayBuilderEntityMixin",
+    "SystemsMixin",
+    "accessor.CameraAccessor",
+    "accessor.ExplosionS2CPacketAccessor",
+    "accessor.PlayerInventoryAccessor",
+    "accessor.UpdateSelectedSlotS2CPacketAccessor",
+    "meteor.AutoEatMixin",
+    "meteor.GuiThemeMixin",
+    "meteor.KillAuraMixin",
+    "meteor.MeteorGuiThemeMixin",
+    "meteor.TimerMixin"
+  ]
+}
